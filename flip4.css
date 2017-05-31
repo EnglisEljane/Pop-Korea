@@ -1,0 +1,198 @@
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 40px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+ nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+	-webkit-box-shadow: 0 5px 7px -7px black;
+	   -moz-box-shadow: 0 5px 7px -7px black;
+	        box-shadow: 0 5px 7px -7px black;
+}
+
+li {
+    float: right;
+	
+}
+
+nav ul li a {
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 29px 33px;
+    text-decoration: none;
+	font-family: 'Roboto Condensed';
+	font-size: 22px;
+	
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: red;
+}
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: red;
+  height: 2.5px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+.fa {
+  padding: 15px;
+  font-size: 40px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 30%;
+  float:right;
+  margin-top: 7px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: white;
+  color: red;
+}
+
+.fa-twitter {
+  background: white;
+  color: red;
+}
+
+.fa-google {
+  background: white;
+  color: red;
+}
+.fa-instagram {
+  background: white;
+  color: red;
+}
+div.gallery{
+    margin: 10px;
+    margin-top: 35px;
+	float: left;
+}
+div.gallery img:hover{
+	opacity: 0.7;
+} 
+div.jay{
+	font-family: 'Roboto Condensed';
+	float:left;
+	color: red;
+	margin-top: 30px;
+	margin-left: 30px;
+	font-size: 25px;
+}
+p{
+	font-family: 'Roboto Condensed';
+	float:left;
+	color: red;
+	margin-top: 30px;
+	margin-left: 3px;
+	font-size: 20px;
+	line-height: 1.5;
+}
+h3 {
+	font-family: 'Roboto Condensed';
+	color: 	red;
+	float:left;
+	margin-left: 8px;
+	font-size:20px;
+}
+.fa {
+  padding: 15px;
+  font-size: 40px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 30%;
+  float:right;
+  margin-top: 7px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: white;
+  color: red;
+}
+
+.fa-twitter {
+  background: white;
+  color: red;
+}
+
+.fa-google {
+  background: white;
+  color: red;
+}
+.fa-instagram {
+  background: white;
+  color: red;
+}
+	
